@@ -1,36 +1,55 @@
+<!-- <a href="/login"> Login </a> | <a href="/"> Index </a> | <a href="/signup"> SignUp </a>
+<br>
+Now in SignUp Page-->
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Twitta..</title>
-</head>
-<body>
-<header>
-  <h4>Login to Twitta</h4>
-</header>
-<hr>
-<main>
-  <form action="/login">
-  <div>
-    <label for="user name">UserName:</label>
-    <input type="text">
-  </div>
-  <div>
-    <label for="Password">Password: </label>
-    <input type="password">
-  </div>
-  <div>
-    <input type="checkbox"> Remember me!
-  </div>
-    <button type="submit">Login</button>
-  </form></main>
-  <hr>
-<footer>
-<p>
-  Don't have an account?<a href="signup">Signup</a>
-</p>
-</footer>
+  <head>
+    <meta charset="utf-8">
+    <title>login Twitta ..</title>
+    <link rel="stylesheet" href="/CSS/login.css" />
+  </head>
+  <body>
+    <!--<div id="header" class="header-class">
+    <form class="modal-content animate" action="action_page.php">
+    <header>
+      <span id="span"><button type="button" name="button"></button></a></span>
+    </header>
+    <main>
+      <div class="container">
+      <h2>login to Twitta!</h2>
+      <form action="/login" class="login-form">
+          <input type="text" placeholder="Username, email or phone number" required/>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="enter a password" required/>
+          <button type="submit" />login</button>
+          <input type="checkbox" checked /> Remember me<a href="/Forgot password?"
+          </div>
+        </form>
+    </main>
 
-</body>
+  </div>
+  </body>
+</html>-->
+<div class="container">
+  <div class="login">
+    <h1>Login</h1>
+    <form method="post" action="">
+      <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+      <p><input type="password" name="password" value="" placeholder="Password"></p>
+      <p class="remember_me">
+        <label>
+         <label>
+          <input type="checkbox" name="remember_me" id="remember_me">
+          Remember me   <a href="#">Forgot your password?</a>
+        </label>
+        </label>
+      </p>
+      <div class="login-help">
+        <p>.</p>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </div>
+    </form>
+  </div>
 
-</html>
+
+</div>

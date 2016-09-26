@@ -1,36 +1,48 @@
-<!-- <a href="/login"> Login </a> | <a href="/"> Index </a> | <a href="/signup"> SignUp </a>
-<br>
-Now in SignUp Page-->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+
+<head>
+    <meta charset="utf-8" />
     <title>Twitta..</title>
-  </head>
-  <body align="center">
-    <header>
-        <a href="/login">Log In</a>
+    <link rel="stylesheet" href="/CSS/signup.css" />
+</head>
+
+<body>
+  <div id="login-header">
+    <a href="/" id ="shape"></a>
+    <header class="top-login">
+          <a href="/login">Already a member? Log In</a>
+  </div>
     </header>
-    <main>
-      <h2>Join Twitta Today!</h2>
-      <form action="/signup">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" placeholder="Enter your Full Name" required/>
-        </div>
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="enter your email" required/>
-          </div>
-          <div>
-            <label for="password">Password:</label>
-            <input type="password" placeholder="enter a password" required/>
-          </div>
-          <button type="submit" />Signup</button>
-          <div>
-          <input type="checkbox" checked /> Stuff and Tracking...
-          </div>
-        </form>
-    </main>
-  </body>
+        <br /><br/>
+    <div class="main-div">
+        <main>
+            <h1 align="center">Join Twitta now..</h1>
+            <form action="/signup">
+                <div class="class-div">
+                    <!--  <label for="user name">UserName:</label>-->
+                    <input type="text" placeholder="name" class="class-input" required/>
+                </div>
+                <div class="class-div">
+                    <!--<label for="Password">Password: </label>-->
+                    <input type="password" placeholder="password" class="class-input" required/>
+                </div>
+                <div class="class-div">
+                    <!--<label for="Password">Password: </label>-->
+                    <input type="email" placeholder="email" class="class-input" required/>
+                </div>
+                <div class="class-div">
+                  <p>
+                  <input type="checkbox" checked>Tailor Twitta based on recent website visits.<a href="#">Learn more</a>.
+                    <a class="btn" href="/signup">Sign up</a><br>
+                        By signing up, you agree to the Terms of Service and Privacy Policy. Others will be able to find you by email or phone number when provided. Advanced options
+                    </p>
+                </div>
+            </form>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>
+
 </html>
